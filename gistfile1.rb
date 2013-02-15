@@ -12,6 +12,8 @@
 
 ### Week 02 ###
 
+# load "week02.rb"
+
 def print_stars(number_of_stars) 
   puts "*" * number_of_stars
 end
