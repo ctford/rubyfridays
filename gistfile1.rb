@@ -1,4 +1,5 @@
 ### Week 01 ###
+
 0.upto(10) { |i|
   print " " * (10 - i)
   puts "*" * (2 * i + 1)
@@ -28,5 +29,17 @@ def is_even?(number)
 end
 
 def is_odd?(number)
+  # ???
+end
+
+def is_fizz(number)
+  # ???
+end
+
+def is_buzz(number)
+  # ???
+end
+
+def print_fizzbuzz(size)
   # ???
 end
