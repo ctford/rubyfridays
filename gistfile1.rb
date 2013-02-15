@@ -35,13 +35,21 @@ def is_odd?(number)
 end
 
 def is_fizz(number)
-  # ???
+  # Is it divisible by three?
 end
 
 def is_buzz(number)
-  # ???
+  # Is it divisible by five?
 end
 
 def print_fizzbuzz(size)
-  # ???
+  # Should print the following when you type print_fizzbuzz(7) in irb:
+  #
+  #> 1
+  #> 2
+  #> fizz
+  #> 4
+  #> buzz
+  #> fizz
+  #> 7
 end
