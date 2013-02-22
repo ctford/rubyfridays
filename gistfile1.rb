@@ -1,45 +1,34 @@
-# week 03
-
-def is_even?(number)
-  if (number % 2 == 0)
-    return true
-  else
-    return false
-  end
+def say_hello
+  puts "hello"
 end
 
-def is_odd?(number)
-  return !is_even?(number)
-end
- 
- # https://gist.github.com/akash/5012126
- # twpublic -> Ent3r-N3t
-def is_fizz(number)
-  return is_divisible_by(number, 3)
-end
- 
-def is_buzz(number)
-  return is_divisible_by(number, 5)
+def say_hello_to(name)
+  puts "Hello " + name
 end
 
-def is_divisible_by(number, divisor)
-  if (number % divisor == 0)
-    return true
-  else
-    return false
+def say_hello_to_all(names)
+  # say_hello_to_all(["Rita", "Lilian", "Jamilla"])
+  names.each do |name|
+    say_hello_to(name)
   end  
 end
- 
-def print_fizzbuzz(size)
-  1.upto(size) do |number|
-    if(is_fizz(number) && is_buzz(number))
-      puts "fizzbuzz"
-    elsif(is_fizz(number))
-      puts "fizz"
-    elsif(is_buzz(number))
-      puts "buzz"
-    else
-      puts number
-    end
-  end
+
+def say_hello_formally_to(name)
+  # {"Louise" => ??, "Joanne" => ??, "Eva" => ??}
+  # Dutchess Louise, Lady Joanne, Queen Eva
+  # say_hello_formally_to("Louise") => "Hello Dutchess Louise"
+  
+end
+
+# Arrays
+# define an array : a = [1,2,3,4]
+# get element from an array: a[0] or a[-1]
+
+# Hashs
+# define a hash : h = {key => value, key2 => value2}
+# get element from a hash : h[key]
+
+def say_hello_in_langauge(language, name)
+#   example -> say_hello_in_langauge("luganda", "Christine")
+#   --> step chi Christine
 end
