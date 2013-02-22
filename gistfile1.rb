@@ -13,6 +13,7 @@ def is_odd?(number)
 end
  
  # https://gist.github.com/akash/5012126
+ # twpublic -> Ent3r-N3t
 def is_fizz(number)
   return is_divisible_by(number, 3)
 end
@@ -30,13 +31,15 @@ def is_divisible_by(number, divisor)
 end
  
 def print_fizzbuzz(size)
-  # Should print the following when you type print_fizzbuzz(7) in irb:
-  #
-  #> 1
-  #> 2
-  #> fizz
-  #> 4
-  #> buzz
-  #> fizz
-  #> 7
+  1.upto(size) do |number|
+    if(is_fizz(number) && is_buzz(number))
+      puts "fizzbuzz"
+    elsif(is_fizz(number))
+      puts "fizz"
+    elsif(is_buzz(number))
+      puts "buzz"
+    else
+      puts number
+    end
+  end
 end
