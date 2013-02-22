@@ -1,26 +1,4 @@
-### Week 01 ###
-
-0.upto(10) { |i|
-  print " " * (10 - i)
-  puts "*" * (2 * i + 1)
-}
-
-9.downto(0) { |i|
-  print " " * (10 - i) 
-  puts "*" * (2 * i + 1)
-}
-
-### Week 02 ###
-
-# load "week02.rb"
-
-def print_stars(number_of_stars) 
-  puts "*" * number_of_stars
-end
-
-def print_diamond(size)
-  # ???
-end
+# week 03
 
 def is_even?(number)
   if (number % 2 == 0)
@@ -31,17 +9,26 @@ def is_even?(number)
 end
 
 def is_odd?(number)
-  # ???
+  return !is_even?(number)
 end
-
+ 
+ # https://gist.github.com/akash/5012126
 def is_fizz(number)
-  # Is it divisible by three?
+  return is_divisible_by(number, 3)
 end
-
+ 
 def is_buzz(number)
-  # Is it divisible by five?
+  return is_divisible_by(number, 5)
 end
 
+def is_divisible_by(number, divisor)
+  if (number % divisor == 0)
+    return true
+  else
+    return false
+  end  
+end
+ 
 def print_fizzbuzz(size)
   # Should print the following when you type print_fizzbuzz(7) in irb:
   #
