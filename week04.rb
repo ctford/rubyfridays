@@ -17,7 +17,7 @@ def make_person(first_name, second_name, age)
   person =
     {"first_name" => first_name,
      "last_name"  => second_name,
-     "age" => age
+     "age" => age,
      "species" => "human"}
   return person
 end
