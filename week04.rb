@@ -67,7 +67,11 @@ family = [gary, susan, mike]
 # Max can be used with lists. If you give it a block that returns 0 if two
 # values are the same, a negative number if the first is smaller or a 
 # positive number if the first is bigger, then it will give you the highest.
-[3, 4, 5].max do |a, b|
+[5, 3, 2].max do |a, b|
+  a - b
+end
+
+[5, 4, 3].sort do |a, b|
   a - b
 end
 
