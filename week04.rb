@@ -64,22 +64,26 @@ end
 # We can make collections of complex things too! Try this in irb:
 family = [gary, susan, mike]
 
+# Max can be used with lists. If you give it a block that returns 0 if two
+# values are the same, a negative number if the first is smaller or a 
+# positive number if the first is bigger, then it will give you the highest.
+[3, 4, 5].max do |a, b|
+  a - b
+end
+
 # Takes a list of people, and returns the oldest one.
 # See say_hello_to_all(names) from last week
 # (https://gist.github.com/akash/5012126).
 def oldest_person_in_the_family(family)
-
-  oldest = family[0]
-
-  family.each do |person|
-    # ????
-  end
-    return oldest
+  # ????
 end
 
 # Homework
 #
 # Take a list of families, and return the oldest person in any of the familes. 
 def oldest_person_in_the_world(families)
+  eldests = families.each do |family|
+    # ????
+  end
   # ????
 end
