@@ -75,6 +75,8 @@ end
   a - b
 end
 
+# Homework
+#
 # Takes a list of people, and returns the oldest one.
 # See say_hello_to_all(names) from last week
 # (https://gist.github.com/akash/5012126).
@@ -82,7 +84,7 @@ def oldest_person_in_the_family(family)
   # ????
 end
 
-# Homework
+# Extra homework
 #
 # Take a list of families, and return the oldest person in any of the familes. 
 def oldest_person_in_the_world(families)
