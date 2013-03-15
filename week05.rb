@@ -22,6 +22,11 @@ def is_older_than1?(person1, person2)
   return person1["age"] > person2["age"]
 end
 
+# Use the shorter way to work out if two people have the same first_name.
+def has_same_first_name_as?(person1, person2)
+  # ???
+end
+
 # There are many useful functions built into Ruby's built-in Arrays and Hashes.
 #
 # See http://ruby-doc.org/core-1.9.3/Array.html and http://ruby-doc.org/core-1.9.3/Hash.html
