@@ -29,7 +29,9 @@ end
 # These built-in functions are "attached" to pieces of data, like Arrays and Hashes. So
 # far, all the functions we've created are "loose", which means you can just call them
 # on their own. Functions that are "attached" are known as "methods", and we call them
-# using a "." 
+# using a "."
+#
+# For example, first is a method on all Arrays.
 a = [1, 2]
 a.first()
 
