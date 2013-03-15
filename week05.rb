@@ -63,6 +63,15 @@ end
   n+1
 end
 
+def first_names(people)
+  people.map do |person|
+    # ???
+  end
+end
+
+# first_names([gary, susan])
+# ["Gary", "Susan"]
+
 # Takes a list of lists of people, and return the oldest person in any of them. 
 def oldest_person_in_the_world(peoples)
   eldests = peoples.map do |people|
