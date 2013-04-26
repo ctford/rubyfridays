@@ -9,6 +9,14 @@
 # Hint: Consider using max or min, which are defined on the ruby docs site.
 # http://ruby-doc.org/core-1.9.3/Array.html
 
+def make_person(first_name, second_name, age)
+  person =
+    {"first_name" => first_name,
+     "last_name"  => second_name,
+     "age" => age}
+  return person
+end
+
 def youngest_person(people)
   # ??? <-- Only do this after writing the test and making sure it starts out failing!
 end
