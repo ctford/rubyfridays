@@ -81,6 +81,6 @@ def test_finds_youngest_person
              [Person.new("Jerry", "Jones", 34),
               Person.new("Fred", "Jones", 44),
               Person.new("Michael", "Jones", 24)])
-  result = eldest(people).name
-  assert_equals("Michael Jones", result, "Youngeset person not found!")
+  result = family.youngest.name
+  assert_equals("Michael Jones", result, "Youngest person not found!")
 end
