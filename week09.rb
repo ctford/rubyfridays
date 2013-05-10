@@ -32,7 +32,6 @@ fred = Person.new("Fred", "Jones", 44)
 fred.methods()
 fred.age()
 fred.name()
-fred.print_name()
 
 Person.methods()
 Person.instance_methods()
@@ -73,7 +72,7 @@ class Family
     end
   end
 
-  def member?
+  def member?(person)
     false
   end
 end
