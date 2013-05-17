@@ -54,9 +54,19 @@ def test_animal_name
   assert_equals("Leo the Lion", result, "Name was wrong.")
 end
 
+def test_animals_can_be_equal
+  result = Animal.new("Leo", "Lion") == Animal.new("Leo", "Lion") 
+  assert_equals(true, result, "Animal was not found to be equal.")
+end
+
+def test_animals_can_be_not_equal
+  result = Animal.new("Leo", "Lion") == Animal.new("Jeremy", "Shark") 
+  assert_equals(false, result, "Animal was wrongly found to be equal.")
+end
+
 # We can write code that works with different classes, so long as they have the right methods.
-#
-# In this case, Family works with both Person and Animal - so long as they both have a name method.
+# 
+# In this case, Family works with both Person and Animal - so long as they both have an == method.
 def test_animals_are_part_of_the_family
   joneses = Family.new(
              [Person.new("Jerry", "Jones", 34),
