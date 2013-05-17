@@ -75,3 +75,5 @@ def test_animals_are_part_of_the_family
   result = joneses.member? Person.new("Leo", "Lion")
   assert_equals(true, result, "Animal not found to be a member of the family.")
 end
+
+# Further work: Extract assert_equals into its own file.
