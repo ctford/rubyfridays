@@ -89,7 +89,7 @@ def test_family_names
               Animal.new("Leo", "Lion"),
               Person.new("Michael", "Jones", 24)])
   result = joneses.name
-  assert_equals("Jerry Jones, Leo the Lion, Michael Jones", result, "Family's anmes not put together correctly.")
+  assert_equals("Jerry Jones, Leo the Lion, Michael Jones", result, "Family's names not put together correctly.")
 end
 
 # For bonus points, change the test and the code to put an "and" before
