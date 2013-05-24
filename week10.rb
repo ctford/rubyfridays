@@ -72,8 +72,25 @@ def test_animals_are_part_of_the_family
              [Person.new("Jerry", "Jones", 34),
               Animal.new("Leo", "Lion"),
               Person.new("Michael", "Jones", 24)])
-  result = joneses.member? Person.new("Leo", "Lion")
+  result = joneses.member? Animal.new("Leo", "Lion")
   assert_equals(true, result, "Animal not found to be a member of the family.")
 end
 
-# Further work: Extract assert_equals into its own file.
+# Homework
+#
+# Write a method that returns out all the names of a family, including
+# both Animals and Persons.
+#
+# Have a look at the join method on the Array class for help.
+# http://ruby-doc.org/core-2.0/Array.html#method-i-join
+def test_family_names
+  joneses = Family.new(
+             [Person.new("Jerry", "Jones", 34),
+              Animal.new("Leo", "Lion"),
+              Person.new("Michael", "Jones", 24)])
+  result = joneses.name
+  assert_equals("Jerry Jones, Leo the Lion, Michael Jones", result, "Family's anmes not put together correctly.")
+end
+
+# For bonus points, change the test and the code to put an "and" before
+# the final name.
