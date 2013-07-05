@@ -2,8 +2,8 @@ Testapp::Application.routes.draw do
 
   match "/" => "home#index"
   match "/sayhello" => "home#sayhello"
-  
   match "/sayhello/to/:name" => "say_hello#say_hello_to"
+  match "/sayhello/:a/:b" => "say_hello#say_hello_number"
 
   # STEP 1: tell your application which url should go to which
   # peice of code (config/routes.rb)
