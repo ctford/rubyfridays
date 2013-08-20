@@ -1049,3 +1049,56 @@ ActionView::MissingTemplate (Missing template say_hello/say_hello_number, applic
 
 
   Rendered /Users/ctford/.rvm/gems/ruby-1.9.3-p385/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-20 20:45:10 +0300
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Compiled jquery.js  (2ms)  (pid 6201)
+Compiled jquery_ujs.js  (0ms)  (pid 6201)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-20 20:45:11 +0300
+Served asset /jquery.js - 200 OK (13ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-20 20:45:11 +0300
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 20:45:11 +0300
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-20 20:45:11 +0300
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/sayhello/to/akash" for 127.0.0.1 at 2013-08-20 20:51:51 +0300
+Connecting to database specified by database.yml
+Processing by SayHelloController#say_hello_to as HTML
+  Parameters: {"name"=>"akash"}
+  Rendered say_hello/_some_partial.html.erb (0.4ms)
+  Rendered shared/_shared_partial.html.erb (0.2ms)
+  Rendered shared/_shared_partial.html.erb (0.0ms)
+  Rendered say_hello/_partial_with_variables.html.erb (0.3ms)
+  Rendered say_hello/say_hello.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-20 20:51:51 +0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-20 20:51:51 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-20 20:51:51 +0300
+Served asset /jquery.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 20:51:51 +0300
+Served asset /application.js - 304 Not Modified (7ms)

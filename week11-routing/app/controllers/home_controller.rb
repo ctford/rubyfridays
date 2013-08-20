@@ -4,8 +4,4 @@ class HomeController < ApplicationController
 		@message = "this is a message."
 	end
 
-	def sayhello
-		
-	end
-
 end
