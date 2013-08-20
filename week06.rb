@@ -68,13 +68,3 @@ end
 def test_youngest_person
   # ??? <-- Do this first!
 end
-
-# Challenge: Sort an Array of people from oldest to youngest. Look up methods
-# to help you out on Ruby docs.
-def oldest_to_youngest(people)
-  # ???
-end
-
-def test_oldest_to_youngest
-  # ???
-end
