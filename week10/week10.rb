@@ -11,8 +11,8 @@
 # We don't have to put all this in the one file. In fact, a good program
 # is broken up across several files and "required" in.
 
-require_relative "Person"
-require_relative "Family"
+require_relative("Person")
+require_relative("Family")
 
 # We can test our methods and objects using assert_equals.
 def assert_equals(expected, actual, failure_message)
@@ -48,6 +48,9 @@ def test_person_name
   assert_equals("Fred Jones", result, "Name was wrong.")
 end
 
+# Challenge: use the person class as a model to create your own Animal class.
+# Once you've created it, the following will work:
+# > require_relative("Animal")
 def test_animal_name
   leo = Animal.new("Leo", "Lion")
   result = leo.name 
@@ -76,7 +79,7 @@ def test_animals_are_part_of_the_family
   assert_equals(true, result, "Animal not found to be a member of the family.")
 end
 
-# Homework
+# Challenge: 
 #
 # Write a method that returns out all the names of a family, including
 # both Animals and Persons.
