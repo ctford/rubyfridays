@@ -1,6 +1,5 @@
-# Week 08
-
 # Last week we built our own assert_equals to help our tests.
+# Here's my version.
 def assert_equals(expected, actual, failure_message)
   if expected == actual
     "Ok!"
@@ -48,17 +47,20 @@ class Person
   end
 end
 
-fred = Person.new("Fred", "Jones", 44)
+# > fred = Person.new("Fred", "Jones", 44)
+# > fred.methods()
+# > fred.age()
+# > fred.name()
+# > fred.print_name()
 
-# fred.methods()
-# fred.age()
-# fred.name()
-# fred.print_name()
+# > Person.methods()
+# > Person.instance_methods()
 
-# Person.methods()
-# Person.instance_methods()
-
+# Challenge: write a function that returns the eldest of a list of people.
+# test_finds_oldest_person() gives an example of how it should work, and
+# will tell you when you've succeeded.
 def eldest(people)
+  # ???
 end
 
 def test_finds_oldest_person
@@ -71,10 +73,12 @@ end
 
 # We don't have to use raw Arrays to gather things together. We can
 # build classes that hold other objects.
+#
+# Challenge: build a family class (see Person above) that makes
+# test_finds_youngest_person() pass.
 class Family
-
+  # ???
 end
-
 
 def test_finds_youngest_person
   family = Family.new(
