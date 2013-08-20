@@ -1,3 +1,31 @@
+# Recap: we can create our own functions.
+def say_hello
+  puts "hello"
+end
+
+# These functions can take arguments (inputs).
+def say_hello_to(name)
+  puts "Hello " + name
+end
+
+# Arrays
+# # define an array:
+# > a = [1,2,3,4]
+#
+# # get element from an array:
+# > a[0]
+#
+# This function says hello to each name in its input.
+# You use it like this:
+#
+# > say_hello_to_all(["Gary", "Louise", "Felix"])
+ 
+def say_hello_to_all(names)
+  names.each do |name|
+    say_hello_to(name)
+  end
+end
+
 # We can make lists of complex things too! Try this in irb:
 #
 # > gary = make_person("Gary", "Jones", 33)
