@@ -1,5 +1,3 @@
-# Week 09
-
 # Last week we built our first class.
 #
 # Remember, in Ruby, we usually group data and functions together into
@@ -24,7 +22,7 @@ class Person
   end
 
   def ==(other)
-    true 
+    false # This isn't right! 
   end
 end
 
@@ -73,7 +71,7 @@ class Family
   end
 
   def member?(person)
-    false
+    false # This isn't right!
   end
 end
 
@@ -87,13 +85,22 @@ def test_finds_youngest_person
 end
 
 # Arrays let us test to see if something is contained in them e.g.
-# [3, 4].member? 3
+# > [3, 4].member?(3)
+#   => true
 #
 # We want to do the same thing for Family. We need to do two things:
 # * Define == for a Person
 # * Define member? for a Family
 
 # Let's start by defining what it means for two people to be equal.
+#
+# Challenge: go through these tests one-by-one, and update the Person
+# class to make them return true. In other words, make the test
+# pass.
+#
+# You run the tests like this:
+# > test_equals()
+# > test_different_first_name_not_equals()
 def test_equals
   result = Person.new("Fred", "Jones", 34) == Person.new("Fred", "Jones", 34)
   assert_equals(true, result, "The same person was not found to be equal.")
@@ -115,6 +122,8 @@ def test_different_ages_still_equals
 end
 
 # Now let's use our == method (indirectly) to implement member?
+#
+# Challenge: these two tests should also pass. You'll need to update Family.
 def test_is_not_member_of
   joneses = Family.new(
              [Person.new("Jerry", "Jones", 34),
