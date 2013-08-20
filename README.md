@@ -53,6 +53,7 @@ Further reading
 ---------------
 
 * [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/) is a graphic novel that is funny, touching, and all about Ruby.
+* The [online documentation](http://ruby-doc.org/core-1.9.3/)
 
 Fun
 ---
