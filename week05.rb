@@ -22,7 +22,7 @@ def is_older_than1?(person1, person2)
   return person1["age"] > person2["age"]
 end
 
-# Use the shorter way to work out if two people have the same first_name.
+# Challenge: use the shorter way to work out if two people have the same first_name.
 def has_same_first_name_as?(person1, person2)
   # ???
 end
@@ -63,11 +63,12 @@ end
   n+1
 end
 
+# Challange: Take a list of people, and produce a list of their first names.
 def first_names(people)
   people.map do |person|
     # ???
   end
 end
 
-# first_names([gary, susan])
-# ["Gary", "Susan"]
+# > first_names([gary, susan])
+# > ["Gary", "Susan"]
