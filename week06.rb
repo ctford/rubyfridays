@@ -1,3 +1,10 @@
+# Takes a list of people, and returns the oldest one, using the max method.
+def oldest_person(people)
+  people.max do |person1, person2|
+    person1["age"] - person2["age"]
+  end
+end
+
 # Takes a list of lists of people, and return the oldest person in any of them. 
 def oldest_person_in_the_world(peoples)
   eldests = peoples.map do |people|
@@ -18,12 +25,24 @@ def test_oldest_person
   return eldest["first_name"] == "Susan"
 end
 
-# Write a function that returns true if oldest_person_in_the_world() works correctly.
+# > test_oldest_person()
+#  => true
+#
+# Try introducing a bug into oldest_person(), and check that test_oldest_person()
+# starts to return false.
+#
+# > test_oldest_person()
+#  => false 
+
+# Challenge: write a function that returns true if oldest_person_in_the_world()
+# works correctly.
 def test_oldest_person_in_the_world
   # ???
 end
 
-# Write a function that returns true if youngest_person() works correctly. 
+# Challenge: write a function that returns true if youngest_person()
+# works correctly. 
+#
 # *Then*, write youngest_person() and check that it's correct using your test. 
 
 def youngest_person
@@ -34,7 +53,8 @@ def test_youngest_person
   # ???
 end
 
-# Write a function that returns true if youngest_person() works correctly. 
+# Challenge: write a function that returns true if youngest_person() works correctly. 
+#
 # *Then*, write youngest_person() and check that it's correct using your test.
 # youngest_person() should take an Array of people and return the youngest one.
 #
@@ -49,7 +69,8 @@ def test_youngest_person
   # ??? <-- Do this first!
 end
 
-# Sort an Array of people from oldest to youngest. Look up methods to help you out on Ruby docs.
+# Challenge: Sort an Array of people from oldest to youngest. Look up methods
+# to help you out on Ruby docs.
 def oldest_to_youngest(people)
   # ???
 end
