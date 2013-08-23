@@ -42,6 +42,12 @@ Whenever you see `$` at the start of the line, that means you're at the command 
 
     $
 
+To load a whole Ruby file, do the following:
+
+    $ irb
+
+    > load("week01.rb")
+
 Installing Git
 --------------
 
