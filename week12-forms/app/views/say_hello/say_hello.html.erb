@@ -1,0 +1,37 @@
+<h2><% "this will not be shown on the page" %></h2>
+<h2><%= "this however, will be" %></h2>
+
+<!-- i can create variables, and not show them -->
+<h2><% a = Time.now%></h2>
+<!-- and i can manipulate then, and only show the result when I choose to ...  -->
+<h2><% a = a + 10.days %></h2>
+<h2>time -> <%= a%></h2>
+
+
+<!-- i can even choose what to show based on the input! -->
+
+<h2>
+	Hello <%= @name %>.
+	<% if @name == "akash" %>
+	you wonderful, amazing person
+	<% end %>
+</h2>
+
+
+<!-- I don't have to keep all my code in 1 place, I can put stuff into a 
+	"partial" view, and delegate to it -->
+
+
+<!-- the name here is shown without the underscore, but don't forget to add it to your filename! -->
+<%= render :partial => "some_partial" %>
+
+	<!-- Partials can also be shared and referenced across multiple folders -->
+<%= render :partial => "shared/shared_partial" %>
+
+	<!-- This won't show as I don't have the equals sign -->
+<% render :partial => "shared/shared_partial" %>
+
+	<!-- and finally I can send information across to a partial like so -->
+<%= render :partial => "partial_with_variables", :locals => {:a => "something"} %>
+
+
