@@ -23,15 +23,4 @@
 
 
 <!-- the name here is shown without the underscore, but don't forget to add it to your filename! -->
-<%= render :partial => "some_partial" %>
-
-	<!-- Partials can also be shared and referenced across multiple folders -->
-<%= render :partial => "shared/shared_partial" %>
-
-	<!-- This won't show as I don't have the equals sign -->
-<% render :partial => "shared/shared_partial" %>
-
-	<!-- and finally I can send information across to a partial like so -->
-<%= render :partial => "partial_with_variables", :locals => {:a => "something"} %>
-
 
